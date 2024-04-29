@@ -76,8 +76,8 @@ def ouvrir_fichier():
 
 def main():
     global root
-    root = ThemedTk() # Utilisez ThemedTk au lieu de tk.Tk()
-    root.set_theme('radiance') # Applique le thème 'radiance'
+    root = ThemedTk() 
+    root.set_theme('radiance') 
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
     width = int(screen_width * 0.50)
@@ -94,9 +94,4 @@ def main():
     create_button(root, "Ouvrir un fichier", ouvrir_fichier)
     root.mainloop()
 
-if __name__ == "__main__":
-    try:
-        main()
-    except:
-        print("Erreur dans pendant le chargement de l'application")
-        messagebox.showinfo("Erreur dans pendant le chargement de l'application")
+
